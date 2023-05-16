@@ -88,13 +88,13 @@ const ScoreBoard = () => {
             />
           </div>
         </div>
-        <div class="flex-col items-center justify-center py-10 mt-5">
+        <div class="flex-col items-center justify-center py-10 mt-5 md:w-sm lg:px-8">
           <div class="flex flex-col mt-6">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="py-2 align-middle min-w-full md:w-sm sm:px-6 lg:px-8">
+              <div class="py-2 align-middle   sm:px-6 ">
                 <div class="shadow overflow-hidden sm:rounded-lg">
                   <table class="min-w-full text-sm text-[#DFE0FF]">
-                    <thead class="bg-[#262784] text-lg uppercase font-medium">
+                    <thead class="bg-[#262784] text-24 uppercase font-medium">
                       <tr>
                         <th></th>
                         <th
