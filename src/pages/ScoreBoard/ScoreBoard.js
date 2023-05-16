@@ -44,6 +44,16 @@ const ScoreBoard = () => {
             СПОРТЛОГ <br /> УЛИРАЛ
           </h1>
         )}
+
+        {/* {isMobile && (
+          <h1 className="text-3xl text-[#ffffff] font-medium text-center pb-20">
+            СПОРТЛОГ <br /> УЛИРАЛ
+          </h1>
+        )} */}
+
+        {/* <h1 className="text-7xl text-[#ffffff] font-medium text-center pb-20">
+          СПОРТЛОГ <br /> УЛИРАЛ
+        </h1> */}
         <div className="grid grid-rows-1 grid-flow-col gap-6 flex justify-center items-center">
           <div
             style={{
