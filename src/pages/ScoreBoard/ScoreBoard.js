@@ -188,7 +188,7 @@ const ScoreBoard = () => {
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">1</td>
                         <td class="px-6 py-4 whitespace-nowrap">0</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
+                        <td class="px-6 py-4 whitespace-nowrap">o</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
                         <td class="px-6 py-4 whitespace-nowrap">1</td>
