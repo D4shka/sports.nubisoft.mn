@@ -35,9 +35,15 @@ const ScoreBoard = () => {
         <h1 className="text-lg text-[#DFE0FF] font-medium pb-5 pt-10 text-center">
           ЭНЭ ЖИЛИЙН ХАМГИЙН
         </h1>
-        <h1 className="text-7xl text-[#ffffff] font-medium text-center pb-20">
-          СПОРТЛОГ <br /> УЛИРАЛ
-        </h1>
+        {isMobile ? (
+          <h1 className="text-3xl text-[#ffffff] font-medium text-center pb-20">
+            СПОРТЛОГ <br /> УЛИРАЛ
+          </h1>
+        ) : (
+          <h1 className="text-7xl text-[#ffffff] font-medium text-center pb-20">
+            СПОРТЛОГ <br /> УЛИРАЛ
+          </h1>
+        )}
         <div className="grid grid-rows-1 grid-flow-col gap-6 flex justify-center items-center">
           <div
             style={{
@@ -88,135 +94,267 @@ const ScoreBoard = () => {
             />
           </div>
         </div>
-        <div class="flex-col items-center justify-center py-10 mt-5 md:w-sm lg:px-8">
-          <div class="flex flex-col mt-6">
-            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="py-2 align-middle   sm:px-6 ">
-                <div class="shadow overflow-hidden sm:rounded-lg">
-                  <table class="min-w-full text-sm text-[#DFE0FF]">
-                    <thead class="bg-[#262784] text-24 uppercase font-medium">
-                      <tr>
-                        <th></th>
-                        <th
-                          scope="col"
-                          class="px-6 py-6 text-left tracking-wider"
-                        >
-                          Teams
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Шатар
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Волейбол
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Теннис
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Сагсан бөмбөг
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Багын уралдаант
-                        </th>
-                        <th
-                          scope="col"
-                          class="px-6 py-3 text-left tracking-wider"
-                        >
-                          Pts
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody class="bg-[#161467] text-xl">
-                      <tr class="bg-black bg-opacity-20">
-                        <td class="pl-4">1</td>
-                        <td class="flex px-6 py-6 whitespace-nowrap">
-                          <img
-                            class="w-5"
-                            src="https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_48x48.png"
-                            alt=""
-                          />
-                          <span class="ml-2 font-medium">Avengers</span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">3</td>
-                        <td class="px-6 py-4 whitespace-nowrap">2</td>
-                        <td class="px-6 py-4 whitespace-nowrap">3</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">8</td>
-                      </tr>
-                      <tr>
-                        <td class="pl-4">2</td>
-                        <td class="flex px-6 py-6 whitespace-nowrap">
-                          <img
-                            class="w-5"
-                            src="https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_48x48.png"
-                            alt=""
-                          />
-                          <span class="ml-2 font-medium">Champ</span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">2</td>
-                        <td class="px-6 py-4 whitespace-nowrap">6</td>
-                        <td class="px-6 py-4 whitespace-nowrap">1</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">9</td>
-                      </tr>
-                      <tr class="bg-black bg-opacity-20">
-                        <td class="pl-4">3</td>
-                        <td class="flex px-6 py-6 whitespace-nowrap">
-                          <img
-                            class="w-5"
-                            src="https://ssl.gstatic.com/onebox/media/sports/logos/UDYY4FSlty6fXFBzvFfcyw_48x48.png"
-                            alt=""
-                          />
-                          <span class="ml-2 font-medium">Doping</span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">1</td>
-                        <td class="px-6 py-4 whitespace-nowrap">0</td>
-                        <td class="px-6 py-4 whitespace-nowrap">o</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">1</td>
-                      </tr>
-                      <tr>
-                        <td class="pl-4">4</td>
-                        <td class="flex px-6 py-6 whitespace-nowrap">
-                          <img
-                            class="w-5"
-                            src="https://ssl.gstatic.com/onebox/media/sports/logos/C3J47ea36cMBc4XPbp9aaA_48x48.png"
-                            alt=""
-                          />
-                          <span class="ml-2 font-medium">Everest</span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">0</td>
-                        <td class="px-6 py-4 whitespace-nowrap">4</td>
-                        <td class="px-6 py-4 whitespace-nowrap">2</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">6</td>
-                      </tr>
-                    </tbody>
-                  </table>
+        {isMobile ? (
+          <div class="flex-col items-center justify-center py-10 mt-5 md:w-sm lg:px-8">
+            <div class="flex flex-col mt-6">
+              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 align-middle sm:px-6 ">
+                  <div class="shadow overflow-hidden sm:rounded-lg">
+                    <table class="min-w-full text-[8px] text-[#DFE0FF]">
+                      <thead class="bg-[#262784] text-[8px] uppercase font-medium">
+                        <tr>
+                          <th></th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Teams
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Шатар
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Волейбол
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Теннис
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Сагсан бөмбөг
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Багын уралдаант
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 py-6 text-left tracking-wider"
+                          >
+                            Pts
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="bg-[#161467] text-[8px]">
+                        <tr class="bg-black bg-opacity-20">
+                          <td class="pl-4">1</td>
+                          <td class="flex px-3 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 py-1 font-medium">Avengers</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">3</td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">3</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">8</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-4">2</td>
+                          <td class="flex px-3 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 py-1 font-medium">Champ</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">6</td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">9</td>
+                        </tr>
+                        <tr class="bg-black bg-opacity-20">
+                          <td class="pl-4">3</td>
+                          <td class="flex px-3 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/UDYY4FSlty6fXFBzvFfcyw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 py-1 font-medium">Doping</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                          <td class="px-6 py-4 whitespace-nowrap">0</td>
+                          <td class="px-6 py-4 whitespace-nowrap">o</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-4">4</td>
+                          <td class="flex px-3 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/C3J47ea36cMBc4XPbp9aaA_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 py-1 font-medium">Everest</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">0</td>
+                          <td class="px-6 py-4 whitespace-nowrap">4</td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div class="flex-col items-center justify-center py-10 mt-5 md:w-sm lg:px-8">
+            <div class="flex flex-col mt-6">
+              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 align-middle sm:px-6 ">
+                  <div class="shadow overflow-hidden sm:rounded-lg">
+                    <table class="min-w-full text-sm text-[#DFE0FF]">
+                      <thead class="bg-[#262784] text-24 uppercase font-medium">
+                        <tr>
+                          <th></th>
+                          <th
+                            scope="col"
+                            class="px-6 py-6 text-left tracking-wider"
+                          >
+                            Teams
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Шатар
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Волейбол
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Теннис
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Сагсан бөмбөг
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Багын уралдаант
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-left tracking-wider"
+                          >
+                            Pts
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="bg-[#161467] text-xl">
+                        <tr class="bg-black bg-opacity-20">
+                          <td class="pl-4">1</td>
+                          <td class="flex px-6 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 font-medium">Avengers</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">3</td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">3</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">8</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-4">2</td>
+                          <td class="flex px-6 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 font-medium">Champ</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">6</td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">9</td>
+                        </tr>
+                        <tr class="bg-black bg-opacity-20">
+                          <td class="pl-4">3</td>
+                          <td class="flex px-6 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/UDYY4FSlty6fXFBzvFfcyw_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 font-medium">Doping</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                          <td class="px-6 py-4 whitespace-nowrap">0</td>
+                          <td class="px-6 py-4 whitespace-nowrap">o</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">1</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-4">4</td>
+                          <td class="flex px-6 py-6 whitespace-nowrap">
+                            <img
+                              class="w-5"
+                              src="https://ssl.gstatic.com/onebox/media/sports/logos/C3J47ea36cMBc4XPbp9aaA_48x48.png"
+                              alt=""
+                            />
+                            <span class="ml-2 font-medium">Everest</span>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">0</td>
+                          <td class="px-6 py-4 whitespace-nowrap">4</td>
+                          <td class="px-6 py-4 whitespace-nowrap">2</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
