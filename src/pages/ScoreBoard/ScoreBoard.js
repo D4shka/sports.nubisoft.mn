@@ -152,10 +152,10 @@ const ScoreBoard = () => {
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">3</td>
                         <td class="px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="px-6 py-4 whitespace-nowrap">3</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">5</td>
+                        <td class="px-6 py-4 whitespace-nowrap">8</td>
                       </tr>
                       <tr>
                         <td class="pl-4">2</td>
@@ -169,10 +169,10 @@ const ScoreBoard = () => {
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">2</td>
                         <td class="px-6 py-4 whitespace-nowrap">6</td>
+                        <td class="px-6 py-4 whitespace-nowrap">1</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">8</td>
+                        <td class="px-6 py-4 whitespace-nowrap">9</td>
                       </tr>
                       <tr class="bg-black bg-opacity-20">
                         <td class="pl-4">3</td>
@@ -203,10 +203,10 @@ const ScoreBoard = () => {
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">0</td>
                         <td class="px-6 py-4 whitespace-nowrap">4</td>
+                        <td class="px-6 py-4 whitespace-nowrap">2</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
                         <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">-</td>
-                        <td class="px-6 py-4 whitespace-nowrap">4</td>
+                        <td class="px-6 py-4 whitespace-nowrap">6</td>
                       </tr>
                     </tbody>
                   </table>
