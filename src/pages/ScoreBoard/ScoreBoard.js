@@ -6,12 +6,14 @@ import nubi from "../../../public/nubi.png";
 import tibi from "../../../public/tibi.png";
 import bonum from "../../../public/bonum.png";
 import magnum from "../../../public/magnum.png";
+import { useMediaQuery } from "react-responsive";
 
 const ScoreBoard = () => {
+  const isMobile = useMediaQuery({ maxWidth: 640 });
   return (
-    <div>
+    <div className="w-full h-screen">
       <div
-        className="object-cover"
+        className="object-cover "
         style={{
           zIndex: -1,
           position: "absolute",
@@ -26,14 +28,14 @@ const ScoreBoard = () => {
           objectFit="cover"
         />
       </div>
-      <div class="flex flex-col items-center justify-center py-10">
-        <h1 class="text-lg text-[#FCD900] font-medium pb-40">
+      <div className="flex-col items-center justify-center py-10">
+        <h1 className="text-lg text-[#FCD900] font-medium pb-40 text-center">
           THE SEASON TWO TEAM
         </h1>
-        <h1 class="text-lg text-[#DFE0FF] font-medium pb-5 pt-10">
+        <h1 className="text-lg text-[#DFE0FF] font-medium pb-5 pt-10 text-center">
           ЭНЭ ЖИЛИЙН ХАМГИЙН
         </h1>
-        <h1 class="text-7xl text-[#ffffff] font-medium text-center pb-20">
+        <h1 className="text-7xl text-[#ffffff] font-medium text-center pb-20">
           СПОРТЛОГ <br /> УЛИРАЛ
         </h1>
         <div className="grid grid-rows-1 grid-flow-col gap-6 flex justify-center items-center">
@@ -86,10 +88,10 @@ const ScoreBoard = () => {
             />
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center py-10 mt-5">
+        <div class="flex-col items-center justify-center py-10 mt-5">
           <div class="flex flex-col mt-6">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="py-2 align-middle inline-block min-w-full md:w-sm sm:px-6 lg:px-8">
+              <div class="py-2 align-middle min-w-full md:w-sm sm:px-6 lg:px-8">
                 <div class="shadow overflow-hidden sm:rounded-lg">
                   <table class="min-w-full text-sm text-[#DFE0FF]">
                     <thead class="bg-[#262784] text-lg uppercase font-medium">
