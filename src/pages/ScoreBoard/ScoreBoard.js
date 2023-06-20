@@ -311,7 +311,7 @@ const ScoreBoard = () => {
                           <td class="px-6 py-4 whitespace-nowrap">6</td>
                           <td class="px-6 py-4 whitespace-nowrap">1</td>
                           <td class="px-6 py-4 whitespace-nowrap">2</td>
-                          <td class="px-6 py-4 whitespace-nowrap">-</td>
+                          <td class="px-6 py-4 whitespace-nowrap">0</td>
                           <td class="px-6 py-4 whitespace-nowrap">11</td>
                         </tr>
                         <tr class="bg-black bg-opacity-20">
@@ -345,8 +345,8 @@ const ScoreBoard = () => {
                           <td class="px-6 py-4 whitespace-nowrap">4</td>
                           <td class="px-6 py-4 whitespace-nowrap">2</td>
                           <td class="px-6 py-4 whitespace-nowrap">6</td>
-                          <td class="px-6 py-4 whitespace-nowrap">-</td>
-                          <td class="px-6 py-4 whitespace-nowrap">12</td>
+                          <td class="px-6 py-4 whitespace-nowrap">6</td>
+                          <td class="px-6 py-4 whitespace-nowrap">18</td>
                         </tr>
                       </tbody>
                     </table>
